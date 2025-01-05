@@ -62,21 +62,17 @@ Inputs
 <form>
     <label for="text-input">Input:</label>
     <input type="text" id="text-input" name="text-input">
-
     <label for="checkbox-input">Checkbox:</label>
     <input type="checkbox" id="checkbox-input" name="checkbox-input">
-
     <label for="radio-input">Radio Input:</label>
     <input type="radio" id="radio-input" name="radio-input">
     <input type="radio" id="radio-input" name="radio-input">
-
     <label for="select-input">Select Input:</label>
     <select id="select-input" name="select-input">
         <option value="option1">Option 1</option>
         <option value="option2">Option 2</option>
         <option value="option3">Option 3</option>
     </select>
-
     <label for="textarea-input">Textarea Input:</label>
     <textarea id="textarea-input" name="textarea-input"></textarea>
 </form>
