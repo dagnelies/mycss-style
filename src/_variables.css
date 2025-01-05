@@ -1,0 +1,7 @@
+:root {
+    --primary: light-dark(blue, blue);
+    --font-header: Ysabeau, Arial, sans-serif;
+    --font-text: Arial, sans-serif;
+    --font-quote: 'Times New Roman', Times, serif;
+    --font-code: 'Courier New', Courier, monospace;
+}

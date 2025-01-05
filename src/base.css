@@ -1,0 +1,9 @@
+@import url('_variables.css');
+
+body {
+    min-height: 100vh;
+}
+
+hr {
+    background-image: linear-gradient(to right, transparent, var(--primary), transparent);
+}
