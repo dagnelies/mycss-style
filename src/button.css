@@ -1,0 +1,54 @@
+@import './_variables.css';
+
+button {
+    font-family: var(--font-body);
+    background: var(--primary-gradient);
+    /*box-shadow: 5px 5px 5px var(--primary-light) inset, -5px -5px 5px var(--primary-dark) inset;*/
+    /*background: var(--primary);*/
+    box-shadow: 2px 4px 4px var(--primary-light) inset, -2px -4px 4px var(--primary-dark) inset;
+    color: white;
+    padding: var(--spacing-sm) var(--spacing);
+    border: var(--border) outset;
+    border-color: var(--primary);
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:focus-visible {
+    outline: 3px dashed var(--primary-light);
+    outline-offset: 2px;
+}
+
+button:hover {
+    filter: brightness(1.2);
+}
+
+button:active {
+    transform: translateY(1px);
+    border-style: inset;
+    background: var(--primary); /* var(--primary-gradient-inverse); */
+    box-shadow: -2px -4px 4px var(--primary-light) inset, 2px 4px 4px var(--primary-dark) inset;
+}
+
+
+button[neutral] {
+    background: var(--neutral-gradient);
+    border-color: var(--neutral);
+    color: black;
+}
+
+button[neutral]:focus-visible {
+    outline: 3px dashed var(--neutral-light);
+    outline-offset: 2px;
+}
+
+button[neutral]:hover {
+    background: var(--neutral);
+}
+
+button[neutral]:active {
+    border-style: inset;
+    background: var(--neutral-gradient-inverse);
+}
+

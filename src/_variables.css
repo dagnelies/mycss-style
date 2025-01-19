@@ -5,3 +5,63 @@
     --font-quote: 'Times New Roman', Times, serif;
     --font-code: 'Courier New', Courier, monospace;
 }
+
+
+/* Color variables */
+:root {
+    --primary: #007bff;
+    --neutral: #cccccc;
+    --success: #28a745;
+    --danger: #dc3545;
+    --warning: #ffc107;
+    --info: #17a2b8;
+    --fg: light-dark(#eeeeee, #111111)
+    --bg: light-dark(#111111, #eeeeee)
+    --subtle: light-dark(#dadada, #333333);
+    --bg-input: light-dark(#ffffff, #000000);
+}
+
+/* Color variants */
+:root {
+    --neutral: light-dark(#cccccc, #999999);
+    --primary: light-dark(#007bff, #0056b3);
+    --success: light-dark(#28a745, #218838);
+    --info: light-dark(#17a2b8, #138496);
+    --warning: light-dark(#ffc107, #d39e00);
+    --danger: light-dark(#dc3545, #bd2130);
+    --subtle: light-dark(#f8f9fa, #343537);
+}
+
+:root {
+    --translucent: rgb(from var(--fg) r g b / 25%);
+
+    --primary-lightest: color-mix(in srgb, var(--primary) 10%, white);
+    --primary-light: color-mix(in srgb, var(--primary) 70%, white);
+    --primary-dark: color-mix(in srgb, var(--primary) 70%, black);
+    --primary-gradient: linear-gradient(to bottom, var(--primary-light), var(--primary), var(--primary-dark));
+    --primary-gradient-inverse: linear-gradient(to top, var(--primary-light), var(--primary), var(--primary-dark));
+
+    --neutral-light: color-mix(in srgb, var(--neutral) 70%, white);
+    --neutral-dark: color-mix(in srgb, var(--neutral) 70%, black);
+    --neutral-gradient: linear-gradient(to bottom, var(--neutral-light), var(--neutral), var(--neutral-dark));
+    --neutral-gradient-inverse: linear-gradient(to top, var(--neutral-light), var(--neutral), var(--neutral-dark));
+}
+
+/* Utility variables */
+:root {
+    --border: 1px;
+    --radius: 0.25rem;
+    --shadow: 0 0 1rem var(--translucent);
+    --transition: 0.3s;
+    --font-body: sans-serif;
+    --font-heading: var(--font-body);
+    --font-size: 1rem;
+    --line-height: 1.2;
+    --hover-filter: brightness(120%);
+    --press-filter: brightness(80%);
+    --spacing: 1rem;
+    --spacing-sm: calc(var(--spacing) / 2);
+    --spacing-lg: calc(var(--spacing) * 2);
+    --breakpoint: 600px;
+}
+

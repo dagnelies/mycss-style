@@ -1,0 +1,12 @@
+@import url('_variables.css');
+
+my-card,
+.my-card {
+  display: block;
+  padding: var(--spacing);
+  margin: var(--spacing);
+  border-radius: var(--border-radius);
+  background-color: var(--background-color);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow)
+}

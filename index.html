@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="src/_all.css" />
+</head>
+
+<body>
+
+    <h1><a href="https://dagnelies.github.io/mycss-style/">mycss-style</a></h1>
+
+
+
+    <h1 id="mycssstyle">MyCSS.style</h1>
+
+    <p>The idea behind this is a very basic CSS theme.</p>
+
+    <p>…like, <em>really</em> basic. On the bright side, it uses the latest CSS features:</p>
+
+    <ul>
+        <li>set theme color(s) directly using CSS varaibles</li>
+        <li>light / dark support</li>
+        <li>flex box layouts</li>
+    </ul>
+
+    <p>It overrides the default HTML elements styles, no need to add classes.</p>
+
+    <h2 id="variables">Variables</h2>
+
+    <h2 id="typography">Typography</h2>
+
+    <h1 id="header-1">Header 1</h1>
+    <h2 id="header-2">Header 2</h2>
+    <h3 id="header-3">Header 3</h3>
+    <h4 id="header-4">Header 4</h4>
+    <h5 id="header-5">Header 5</h5>
+    <h6 id="header-6">Header 6</h6>
+
+    <blockquote>
+        <p>Some quote</p>
+    </blockquote>
+
+    <p>Some paragraph with <em>italic</em>, <strong>bold</strong> and <strong><em>italic bold</em></strong>.</p>
+
+    <hr />
+
+    <h2 id="buttons">Buttons</h2>
+
+    <div>
+        <button>Default Button</button>
+        <button neutral="">Neutral Button</button>
+        <button info="">Info Button</button>
+        <button success="">Success Button</button>
+        <button warning="">Warning Button</button>
+        <button danger="">Danger Button</button>
+    </div>
+
+    <div class="language-html highlighter-rouge">
+        <div class="highlight">
+            <pre class="highlight"><code><span class="nt">&lt;button&gt;</span>Default Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">neutral</span><span class="nt">&gt;</span>Neutral Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">info</span><span class="nt">&gt;</span>Info Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">success</span><span class="nt">&gt;</span>Success Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">warning</span><span class="nt">&gt;</span>Warning Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">danger</span><span class="nt">&gt;</span>Danger Button<span class="nt">&lt;/button&gt;</span>
+</code></pre>
+        </div>
+    </div>
+
+    <hr />
+
+    <h2 id="inputs">Inputs</h2>
+
+    <form>
+        <label for="text-input">Input:</label>
+        <input type="text" id="text-input" name="text-input" />
+        <label for="checkbox-input">Checkbox:</label>
+        <input type="checkbox" id="checkbox-input" name="checkbox-input" />
+        <label for="radio-input">Radio Input:</label>
+        <input type="radio" id="radio-input" name="radio-input" />
+        <input type="radio" id="radio-input" name="radio-input" />
+        <label for="select-input">Select Input:</label>
+        <select id="select-input" name="select-input">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+        <label for="textarea-input">Textarea Input:</label>
+        <textarea id="textarea-input" name="textarea-input"></textarea>
+    </form>
+
+    <div class="language-html highlighter-rouge">
+        <div class="highlight">
+            <pre class="highlight"><code><span class="nt">&lt;form&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"text-input"</span><span class="nt">&gt;</span>Input:<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"text-input"</span> <span class="na">name=</span><span class="s">"text-input"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"checkbox-input"</span><span class="nt">&gt;</span>Checkbox:<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"checkbox-input"</span> <span class="na">name=</span><span class="s">"checkbox-input"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radio-input"</span><span class="nt">&gt;</span>Radio Input:<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"radio-input"</span> <span class="na">name=</span><span class="s">"radio-input"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"radio-input"</span> <span class="na">name=</span><span class="s">"radio-input"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"select-input"</span><span class="nt">&gt;</span>Select Input:<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"select-input"</span> <span class="na">name=</span><span class="s">"select-input"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"option1"</span><span class="nt">&gt;</span>Option 1<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"option2"</span><span class="nt">&gt;</span>Option 2<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"option3"</span><span class="nt">&gt;</span>Option 3<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;/select&gt;</span>
+
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"textarea-input"</span><span class="nt">&gt;</span>Textarea Input:<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;textarea</span> <span class="na">id=</span><span class="s">"textarea-input"</span> <span class="na">name=</span><span class="s">"textarea-input"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -2,8 +2,7 @@
 
 body {
     min-height: 100vh;
+    background-color: var(--bg);
+    color: var(--fg);
 }
 
-hr {
-    background-image: linear-gradient(to right, transparent, var(--primary), transparent);
-}
