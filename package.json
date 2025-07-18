@@ -4,7 +4,10 @@
   "description": "A very basic CSS theme",
   "main": "index.html",
   "scripts": {
-    "dev": "python3 -m http.server 3000 --bind 127.0.0.1"
+    "dev": "http-server . -p 3000 -c-1 --cors"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
   },
   "keywords": ["css", "theme", "basic"],
   "author": "",
