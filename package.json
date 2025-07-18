@@ -1,0 +1,12 @@
+{
+  "name": "mycss-style",
+  "version": "1.0.0",
+  "description": "A very basic CSS theme",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 3000 --bind 127.0.0.1"
+  },
+  "keywords": ["css", "theme", "basic"],
+  "author": "",
+  "license": "MIT"
+}
